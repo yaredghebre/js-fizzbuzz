@@ -30,5 +30,17 @@ body {
     font-size: 2rem;
     width: 100px;
     height: 100px;
+    background-color: grey;
+}
+
+.three {
     background-color: yellow;
+}
+
+.five {
+    background-color: aqua;
+}
+
+.fifteen {
+    background-color: coral;
 }

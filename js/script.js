@@ -5,22 +5,22 @@
 
 
 // CALCOLO
+const gridElem = document.querySelector(".grid");
 for (let i = 1; i <=100; i++) {
     let multiple;
+    let classColor;
     if (i % 15 === 0) {
         multiple = "FizzBuzz";
+        classColor = "fifteen"
     } else if (i % 3 === 0) {
         multiple = "Fizz";
+        classColor = "three"
     } else if (i % 5 === 0) {
         multiple = "Buzz";
+        classColor = "five"
     }
     console.log(i, multiple);
+    gridElem.innerHTML += `<div class ="box ${classColor}">${i}</div>`;
 }
 
-// for (let i = 1; i <= 100; i++) {
-//     let multiple
-//     if (i % 15 == 0) console.log("FizzBuzz");
-//     else if (i % 3 == 0) console.log("Fizz");
-//     else if (i % 5 == 0) console.log("Buzz");
-//     else console.log(i);
-// }
+// OUTPUT
