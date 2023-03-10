@@ -7,7 +7,7 @@
 // CALCOLO
 const gridElem = document.querySelector(".grid");
 for (let i = 1; i <=100; i++) {
-    let multiple;
+    let multiple = i;
     let classColor;
     if (i % 15 === 0) {
         multiple = "FizzBuzz";
@@ -20,7 +20,7 @@ for (let i = 1; i <=100; i++) {
         classColor = "five"
     }
     console.log(i, multiple);
-    gridElem.innerHTML += `<div class ="box ${classColor}">${i}</div>`;
+    gridElem.innerHTML += `<div class ="box ${classColor}">${multiple}</div>`;
 }
 
 // OUTPUT

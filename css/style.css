@@ -20,14 +20,14 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    gap: 10px;
+    gap: 30px;
 }
 
 .box {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.2rem;
     width: 100px;
     height: 100px;
     background-color: grey;
