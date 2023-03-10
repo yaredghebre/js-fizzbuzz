@@ -7,14 +7,14 @@
 // CALCOLO
 for (let i = 1; i <=100; i++) {
     let multiple;
-    if (i % 15 === 1) {
-        multiple = "FizzBuzz"
-    } else if (i % 3 === 1) {
-        multiple = "Fizz"
-    } else if (i % 5 === 1) {
-        multiple = "Buzz"
+    if (i % 15 === 0) {
+        multiple = "FizzBuzz";
+    } else if (i % 3 === 0) {
+        multiple = "Fizz";
+    } else if (i % 5 === 0) {
+        multiple = "Buzz";
     }
-    console.log(multiple);
+    console.log(i, multiple);
 }
 
 // for (let i = 1; i <= 100; i++) {
