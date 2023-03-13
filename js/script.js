@@ -19,8 +19,27 @@ for (let i = 1; i <=100; i++) {
         multiple = "Buzz";
         classColor = "five"
     }
-    console.log(i, multiple);
-    gridElem.innerHTML += `<div class ="box ${classColor}">${multiple}</div>`;
-}
 
 // OUTPUT
+    // console.log(i, multiple);
+    // gridElem.innerHTML += `<div class ="box ${classColor}">${multiple}</div>`;
+
+
+// Lezione 
+    const newBox = document.createElement("div");
+    newBox.innerHTML = multiple;
+    newBox.className = `box ${multiple}`;
+    newBox.addEventListener ("click", function() {
+        alert(multiple);
+    });
+    gridElem.append(newBox);
+    }
+
+
+    // const newBox = document.createElement("div");
+    // newBox.innerHTML = boxText;
+    // newBox.className = `box ${boxClass}`;
+    // newBox.addEventListener("click", function() {
+    //     alert(boxText);
+    // });
+    // containerElem.append(newBox);
